@@ -29,7 +29,7 @@
 # 📖 [Math-Magician] <a name="about-project"></a>
 
 >
-In this project I have installed the respective React files and linters in order to proceed with the math magicians project. This project involves building a calculator with basic functionality using the React framework
+In this project I have installed the respective React files and lintersas well as the user interface that closely matches the template. This project involves building a calculator with basic functionality using the React framework
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,8 +68,8 @@ In this project I have installed the respective React files and linters in order
 
 > Describe between 1-3 key features of the application.
 
-- **[Set up a React app]**
-- **[Use React documentation]**
+- **[Create a directory called components.]**
+- **[Create a calculator.js and calculator.css file that creates a UI.]**
 - **[]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -144,8 +144,8 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Use React components]**
 - [ ] **[Use React props]**
+- [ ] **[]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
