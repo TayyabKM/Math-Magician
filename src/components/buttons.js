@@ -1,43 +1,136 @@
 import React from 'react';
+import calculate from './logic/calculate';
 
 function Buttons() {
+
+    constructor(props) {
+        super(props);
+        this.state = { total: 0, next: null, operation: null };
+      }
+
+      buttonClicked = (event) => {
+        const btnName = event.target.innerText;
+        const answer = calculate(this.state, btnName);
+        this.setState(answer);
+      };
+  
+      const { total, sign, next } = this.state;    
   return (
-    <div className="grid-container">
-      <div className="container-row">
-        <button type="button" className="button-grey">AC</button>
-        <button type="button" className="button-grey">+/-</button>
-        <button type="button" className="button-grey">%</button>
-        <button type="button" className="button-orange">÷</button>
+    <div className="first">
+        <div className="calculator-wrap">
+          <div className="calculator-display">
+            {total}
+            {sign}
+            {next}
+          </div>
+          <div className="calculator-keys">
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="all-clear"
+              value="all-clear"
+            >
+              AC
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="+/-"
+            >
+              +/-
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="%"
+            >
+              %
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="/"
+            >
+              &divide;
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="7">
+              7
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="8">
+              8
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="9">
+              9
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="x"
+            >
+              x
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="4">
+              4
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="5">
+              5
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="6">
+              6
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="-"
+            >
+              -
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="1">
+              1
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="2">
+              2
+            </button>
+            <button type="button" onClick={this.buttonClicked} value="3">
+              3
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="+"
+            >
+              +
+            </button>
+          </div>
+          <div className="last-three">
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="decimal"
+              value="0"
+            >
+              0
+            </button>
+            <button type="button" onClick={this.buttonClicked} value=".">
+              .
+            </button>
+            <button
+              type="button"
+              onClick={this.buttonClicked}
+              className="operator"
+              value="="
+            >
+              =
+            </button>
+          </div>
+        </div>
       </div>
-
-      <div className="container-row">
-        <button type="button" className="button-grey">7</button>
-        <button type="button" className="button-grey">8</button>
-        <button type="button" className="button-grey">9</button>
-        <button type="button" className="button-orange">x</button>
-      </div>
-
-      <div className="container-row">
-        <button type="button" className="button-grey">4</button>
-        <button type="button" className="button-grey">5</button>
-        <button type="button" className="button-grey">6</button>
-        <button type="button" className="button-orange">-</button>
-      </div>
-
-      <div className="container-row">
-        <button type="button" className="button-grey">1</button>
-        <button type="button" className="button-grey">2</button>
-        <button type="button" className="button-grey">3</button>
-        <button type="button" className="button-orange">+</button>
-      </div>
-
-      <div className="third-row-bottom">
-        <button type="button" className="button-grey">0</button>
-        <button type="button" className="button-grey">.</button>
-        <button type="button" className="button-orange">=</button>
-      </div>
-    </div>
-
   );
 }
 
