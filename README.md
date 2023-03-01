@@ -101,8 +101,6 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **TayyabKM**
 
 - Github: [@TayyabKM](https://github.com/TayyabKM)
@@ -115,9 +113,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[]**
+- [ ] **[Add tests using Jest and React testing library]**
 - [ ] **[]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
