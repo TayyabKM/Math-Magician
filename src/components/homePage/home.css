@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 25px;
+}
+
+.title {
+  font-size: 50px;
+}
