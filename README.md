@@ -29,7 +29,7 @@
 # 📖 [Math-Magician] <a name="about-project"></a>
 
 >
-In this project I have installed the respective React files and lintersas well as the user interface that closely matches the template.The next step was to incorporate state and props, passing props into child components and using using lifecycle methods to get the calculator functioning. This project involves building a calculator with basic functionality using the React framework
+"Math magicians" is a web application for those who are interested in Mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -144,8 +144,8 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Addition of a homepage]**
-- [ ] **[Addition of a contact page]**
+- [ ] **[ Testing ]**
+- [ ] **[]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
