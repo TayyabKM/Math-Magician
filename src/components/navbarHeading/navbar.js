@@ -24,11 +24,6 @@ const Navbar = () => (
       <li>
         &#124;
       </li>
-      <li className="navList-item">
-        <Link to="/quote">
-          Quote
-        </Link>
-      </li>
     </ul>
   </nav>
 );
