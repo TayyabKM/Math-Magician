@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote SnapShot test  1`] = `
+<section
+  className="quote_display"
+>
+  <h2>
+    Quote
+  </h2>
+  <p>
+    Loading quote...
+  </p>
+</section>
+`;
